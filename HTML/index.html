@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Animal Shelter</title>
+    <link href="../CSS/index.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="content">
+
+        <!--header-->
+
+        <div class="header">
+            <h1 class="animal-sheltr">Animal Shelter</h1>
+            <img src="../images/logo.png" alt="logo" class="logo" />
+
+            <ul class="menue">
+                <li><a href="index.html">Home</a></li>
+                <li>Pets</li>
+                <li>Adoupt</li>
+                <li>About Us</li>
+                <li>Service</li>
+            </ul>
+
+            <form method="post">
+                <button type="submit" id="login" >Login</button>
+                <button type="submit" id="sign-up">Sign Up</button>
+            </form>
+
+        </div>
+
+        <!--adoption area-->
+
+        <div class="adoption">
+            <img src="../images/adopt.png" alt="Adopt dont shop" class="adopt" />
+            <img src="../images/land.png" class="land" />
+            <img src="../images/statement.png" class="statement" />
+            <button id="Start-Adoption" onclick="adoptionForm()">Start Adoption</button>
+
+            <div class="popupForms" id="adoptionForm">
+                <form name="adoption">
+                    <h3 class="Form1Title"><b>Adopte your animal</b></h3>
+
+                    <div id="animal-selection">
+                        <label for="animal"><b>Choose your animal</b></label>
+                        <select name="aminals">
+                            <option>Cat</option>
+                            <option>Dog</option>
+                            <option>Bird</option>
+                            <option>Fish</option>
+                            <option>Hamester</option>
+                        </select><br>
+                    </div>
+
+                    <div id="person-name">
+                        <label for="fname"><b>First Name</b></label>
+                        <input type="text" placeholder="First Name" name="fname" required>
+
+                        <label for="lname"><b>Last Name</b></label>
+                        <input type="text" placeholder="Last Name" name="lname" required>
+                    </div>
+                    <div id="other-info">
+                        <label for="phone"><b>Phone number</b></label>
+                        <input type="text" placeholder="01xxxxxxxxx" name="phone" required>
+
+                        <label for="address"><b>Address</b></label>
+                        <input type="text" name="address" required>
+                    </div>
+                    <button type="submit" class="submit-adoption" onclick="closeForm()">Send Adoption Request</button>
+                    <input type="image" src="../images/close.jpg" name="close" class="close">
+                </form>
+            </div>
+
+        </div>
+
+        <!--  Animals Div -->
+        
+        <!--dogs area-->
+        <div class="ourAnimals" >
+            <h2 style="color: #077692;">Our Animals❤</h2>
+            <div id="dogs" class="animals" >
+                <img src="../images/dogs.png"  class="icons" onclick="dogsForm()"/>
+    
+                <div class="popupForms" id="dogForm">
+                    <h3 class="Form1Title">Dogs</h3>
+                    <form name="Dogs">
+                      
+                      <div class="radioButton">
+                        <label for="gender"><b>Gender</b></label>
+                        <input type="radio" name="gender" value="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female">
+                        <label for="female">Female</label>><br>
+                      </div>
+                      
+                      <div class="ageBreed">
+                        <label for="age"><b>Age</b></label >
+                          <select name="age">
+                            <option>Newly born</option>
+                            <option>+2 year</option>
+                            <option>+4 year</option>
+                            <option>+6 year</option>
+                            <option>+8 year</option>
+                            <option>+10 year</option>
+                            <option>All</option>
+                         </select>
+                      
+                         <label for="breed"><b>Breed</b></label required>
+                         <select name="breed">
+                           <option>Husky</option>
+                           <option>German Shepherd</option>
+                           <option>Retriever</option>
+                           <option>Bullgod</option>
+                           <option>Dachshund</option>
+                           <option>Beagle</option>
+                           <option>All</option>
+                        </select><br>
+                      </div>
+                      
+    
+                    <div class="color">
+                      <label for="color"><b>Color</b></label>
+                      <select name="color">
+                        <option>White</option>
+                        <option>Black</option>
+                        <option>Gray</option>
+                        <option>Brown</option>
+                        <option>Mixed</option>
+                        <option>others</option>
+                        <option>All</option>
+                     </select><br>
+                    </div>
+                    
+                  
+                      <button type="submit" class="submit-adoption" onclick="closeForm()">Find my Dog</button>
+                     <input type="image" src="../images/close.jpg" name="close" class="close"> 
+                    </form>
+                  </div>
+            </div>
+
+            <!--cats area-->
+    
+            <div id="cats" class="animals" >
+                <img src="../images/cats.png" class="icons" onclick="catsForm()"/>
+    
+                <div class="popupForms" id="catForm">
+                    <h3 class="Form1Title">Cats</h3>
+                    <form name="Cats">
+                      <div class="radioButton">
+                        <label for="gender"><b>Gender</b></label>
+                        <input type="radio" name="gender" value="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                      </div>
+                  
+                      <div class="ageBreed">
+                        <label for="age"><b>Age</b></label >
+                          <select name="age">
+                            <option>Newly born</option>
+                            <option>+2 year</option>
+                            <option>+4 year</option>
+                            <option>+6 year</option>
+                            <option>+8 year</option>
+                            <option>+10 year</option>
+                            <option>All</option>
+                         </select>
+                      
+                         <label for="breed"><b>Breed</b></label required>
+                         <select name="breed">
+                           <option>Scttish Fold</option>
+                           <option>sphynx</option>
+                           <option>Birman</option>
+                           <option>Bombay</option>
+                           <option>Ragdoll</option>
+                           <option>Abyssinian</option>
+                           <option>All</option>
+                        </select><br>
+        
+                      </div>
+                      
+                      <div class="color"><label for="color"><b>Color</b></label>
+                        <select name="color">
+                          <option>White</option>
+                          <option>Black</option>
+                          <option>Gray</option>
+                          <option>Brown</option>
+                          <option>Mixed</option>
+                          <option>others</option>
+                          <option>All</option>
+                       </select><br>
+                      </div>
+                  
+                   <button type="submit" class="submit-adoption" onclick="closeForm()">Find my Cat</button>
+                   <input type="image" src="../images/close.jpg" name="close" class="close"> 
+                    </form>
+                  </div>
+            </div>
+
+            <!--hamsters area-->
+    
+            <div id="hamsters" class="animals">
+                <img src="../images/hamster.png" class="icons" onclick="hamstersForm()"/>
+    
+                <div class="popupForms" id="hamsterForm">
+                  <h3 class="Form1Title">Hamsters</h3>
+                    <form name="Hamster">
+                      <div class="radioButton">
+                        <label for="gender"><b>Gender</b></label>
+                        <input type="radio" name="gender" value="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                      </div>
+                  
+                      <div class="ageBreed">
+                        <label for="age"><b>Age</b></label >
+                          <select name="age">
+                            <option>Newly born</option>
+                            <option>+1 year</option>
+                            <option>+2 year</option>
+                            <option>+3 year</option>
+                            <option>All</option>
+                         </select>
+        
+                        <label for="color"><b>Color</b></label>
+                        <select name="color">
+                          <option>White</option>
+                          <option>Golden</option>
+                          <option>Grey</option>
+                          <option>All</option>
+                       </select><br>
+                      </div>
+                      
+                  
+                      <button type="submit" class="submit-adoption" onclick="closeForm()">Find my Hamster</button>
+                      <input type="image" src="../images/close.jpg" name="close" class="close">
+                    </form>
+                  </div>
+            </div>
+
+            <!--birds area-->
+
+            <div id="birds" class="animals">
+                <img src="../images/bird.png" class="icons" onclick="birdsForm()" />
+
+                <div class="popupForms" id="birdsForm">
+                    <h3 class="Form1Title">Birds</h3>
+                    <form name="Birds">
+                        <div class="radioButton">
+                            <label for="gender"><b>Gender</b></label>
+                            <input type="radio" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+
+                        <div class="ageBreed">
+                            <label for="age"><b>Age</b></label>
+                            <select name="age">
+                                <option>Newly born</option>
+                                <option>+1 year</option>
+                                <option>+2 year</option>
+                                <option>+3 year</option>
+                                <option>All</option>
+                            </select>
+
+                            <label for="color"><b>Color</b></label>
+                            <select name="color">
+                                <option>White</option>
+                                <option>Golden</option>
+                                <option>Grey</option>
+                                <option>All</option>
+                            </select><br>
+                        </div>
+
+
+                        <button type="submit" class="submit-adoption" onclick="closeForm()">Find my Bird</button>
+                        <input type="image" src="../images/close.jpg" name="close" class="close">
+                    </form>
+                </div>
+
+            </div>
+
+            <!--fish area-->
+
+            <div id="Fishs" class="animals" >
+                <img src="../images/fish.png" class="icons" onclick="fishsForm()"/>
+                <div class="popupForms" id="fishsForm">
+                    <h3 class="Form1Title">Fish</h3>
+                    <form name="Fish">
+                        <div class="radioButton">
+                            <label for="gender"><b>Gender</b></label>
+                            <input type="radio" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+
+                        <div class="ageBreed">
+                            <label for="age"><b>Age</b></label>
+                            <select name="age">
+                                <option>Newly born</option>
+                                <option>+1 year</option>
+                                <option>+2 year</option>
+                                <option>+3 year</option>
+                                <option>All</option>
+                            </select>
+
+                            <label for="color"><b>Color</b></label>
+                            <select name="color">
+                                <option>White</option>
+                                <option>Golden</option>
+                                <option>Grey</option>
+                                <option>All</option>
+                            </select><br>
+                        </div>
+
+
+                        <button type="submit" class="submit-adoption" onclick="closeForm()">Find my Fish</button>
+                        <input type="image" src="../images/close.jpg" name="close" class="close">
+                    </form>
+                </div>    
+                
+            </div>
+
+            <!--rabbits area-->
+
+            <div id="rabbits" class="animals">
+                <img src="../images/rabbit.png" class="icons" onclick="rabbitsForm()" />
+                <div class="popupForms" id="rabbitsForm">
+                    <h3 class="Form1Title">Rabbits</h3>
+                    <form name="Rabbits">
+                        <div class="radioButton">
+                            <label for="gender"><b>Gender</b></label>
+                            <input type="radio" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+
+                        <div class="ageBreed">
+                            <label for="age"><b>Age</b></label>
+                            <select name="age">
+                                <option>Newly born</option>
+                                <option>+1 year</option>
+                                <option>+2 year</option>
+                                <option>+3 year</option>
+                                <option>All</option>
+                            </select>
+
+                            <label for="color"><b>Color</b></label>
+                            <select name="color">
+                                <option>White</option>
+                                <option>Golden</option>
+                                <option>Grey</option>
+                                <option>All</option>
+                            </select><br>
+                        </div>
+
+
+                        <button type="submit" class="submit-adoption" onclick="closeForm()">Find my Rabbit</button>
+                        <input type="image" src="../images/close.jpg" name="close" class="close">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!--  -------------------------------------------------------------------- -->
+
+        <div class="line"></div>
+
+        <!--girls area-->
+        <div id="Girls">
+
+            <img src="../images/girl1.png" alt="girl with a pet1" class="girls" />
+            <img src="../images/girl2.png" alt="girl with a pet2" class="girls" />
+            <img src="../images/girl3.png" alt="girl with a pet3" class="girls" />
+            <img src="../images/girl4.png" alt="girl with a pet4" class="girls" />
+
+        </div>
+
+        <!-- Donation area -->
+
+        <div class="donate">
+
+            <form class="donation">
+                <div class="duration">
+                    <label class="donation-labels" for="duration">My Donation Will Be..</label>
+                    <select id="duration" name="duration">
+                        <option value="Yearly">Yearly</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Once">Once</option>
+                    </select>
+                </div>
+
+                <div class="amount">
+                    <label class="donation-labels">With .. </label>
+                    <input type="text" id="donation-amount" placeholder="e.g. 5.00" maxlength="7">
+                </div>
+
+                <div class="currency">
+                    <select id="currency" name="currency">
+                        <option value="Euro">&euro;</option>
+                        <option value="Dollar">$</option>
+                        <option value="Pound">&pound;</option>
+                    </select>
+                </div>
+
+                <input type="image" src="../images/donate.png" name="donate" class="donate-submit" onclick="alert('Thanks For Your Donation <3');">
+            </form>
+
+        </div>
+
+        <!--footer area-->
+
+        <div class="footer">
+            <img src="../images/logo.png" alt="logo" class="footer-logo" />
+            <a href="https://www.facebook.com">
+                <img alt="Facebook" src="../images/face.png" class="footer-media">
+            </a>
+
+            <a href="https://www.twitter.com">
+                <img src="../images/twit.png" alt="twitter" class="footer-media" >
+            </a>
+
+            <a href="https://www.whatsapp.com">
+                <img src="../images/whats.png" alt="whatsapp" class="footer-media">
+            </a>
+
+            <a href="https://www.instagram.com">
+                <img src="../images/insta.png" alt="intagram" class="footer-media">
+            </a>
+
+            <p class="footer-paragragh">Copyright © 2000-2020 Animal Shelter | Copyright © 2015-2020 Animal Shelter Partners. All rights reserved</p>
+        </div>
+
+
+    </div>
+
+
+    <script src="../JS/index.js"></script>
+</body>
+</html>

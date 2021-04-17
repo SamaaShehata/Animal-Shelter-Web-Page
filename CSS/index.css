@@ -1,0 +1,462 @@
+body {
+    background-image:url('../images/backgroundd.jpg');
+    background-repeat:repeat;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.content {
+    width: 1200px;
+    height: 2000px;
+    margin: auto;   
+    background: white;
+    position: relative;
+    border-radius: 30px;
+}
+
+a {
+    color: #2EC4B6;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Berlin Sans FB';
+    color: #FF9F1C;
+}
+
+h2 {
+    font-family: 'Maiandra GD';
+    color: #FF9F1C;
+}
+
+
+.animal-sheltr {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+
+.header{
+    padding-right:2em;
+}
+
+
+.logo {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+.menue {
+    position:absolute;
+    left:370px;
+    top:15px;
+    list-style:none;
+    font-family: 'Arial Rounded MT';
+    color: #2EC4B6;
+    font-size:1.5em;
+}
+
+.menue li{
+    display:inline;
+    margin:15px;
+}
+
+.menue li:hover {
+    text-decoration-line:underline;
+    font-size:30px;
+}
+
+#login {
+    position: absolute;
+    right: 100px;
+    top: 30px;
+    height: 50px;
+    width: 80px;
+    color: #2EC4B6;
+    font-size: 13px;
+    background-color: white;
+    border-color: #2EC4B6;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 30px;
+    box-shadow: none;
+}
+
+#sign-up {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    height: 50px;
+    width: 80px;
+    font-size:13px;
+    color: #2EC4B6;
+    background-color: white;
+    border-color: #2EC4B6;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 30px;
+    box-shadow: none;
+}
+
+#login:hover {
+    color: white;
+    background-color: #2EC4B6;
+    font-size: 17px;
+}
+
+#sign-up:hover {
+    color: white;
+    background-color: #2EC4B6;
+    font-size:17px;
+}
+
+.adoption{
+    position:absolute;
+    top:200px;
+    position:relative;
+}
+
+.adopt{
+    height:400px;
+    width:500px;
+    position:absolute;
+    right:0px;
+    z-index:2;
+}
+
+.land {
+    height: 175px;
+    width: 1200px;
+    position: absolute;
+    display:flex;
+    right:0px;
+    top:225px;
+}
+
+
+.statement{
+    position:absolute;
+    top:70px;
+    left:70px;
+}
+
+#Start-Adoption {
+    position: absolute;
+    left: 150px;
+    top: 280px;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    font-family:'Arial Rounded MT';
+    color: white;
+    background-color: #2EC4B6;
+    border-color: #2EC4B6;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 40px;
+    box-shadow: none;
+}
+
+
+#Start-Adoption:hover {
+    color: #ffffff;
+    background-color: #FF9F1C;
+    font-size: 24px;
+    border-color: #FF9F1C;
+}
+
+.popupForms {
+    display: none;
+    width: 700px;
+    height: 450px;
+    background-color: #fefbf7;
+    border-color: #FF9F1C;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 30px;
+    position: fixed;
+    margin: auto;
+    z-index: 5;
+    position: relative;
+}
+
+.Form1Title {
+    position:absolute;
+    left:20px;
+    top:7px;
+}
+
+#person-name {
+    position: absolute;
+    display:block;
+    left: 30px;
+    top: 100px;
+    margin:auto;
+}
+
+#other-info {
+    position: absolute;
+    display: block;
+    left: 30px;
+    top: 170px;
+    margin: auto;
+}
+
+#animal-selection {
+    position: absolute;
+    display: block;
+    left:200px;
+    top: 230px;
+    margin:auto;
+}
+
+.submit-adoption {
+    position: absolute;
+    left: 250px;
+    top: 300px;
+    height: 60px;
+    width: 200px;
+    font-size: 15px;
+    color: white;
+    background-color: #FFBF69;
+    border-color: #FFBF69;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 40px;
+    box-shadow: none;
+    font-family:'Arial Unicode MS';
+}
+
+#submit-adoption:hover {
+    color: #ffffff;
+    background-color: #FF9F1C;
+    font-size: 20px;
+    border-color: #FF9F1C;
+}
+
+.close{
+    position:absolute;
+    width:20px;
+    height:20px;
+    right:10px;
+    top:10px;
+    
+}
+
+#adoptionForm {
+    position: fixed;
+    left: 25%;
+    top: 20%;
+}
+
+label {
+    width: 6em;
+    color: #02b3a3;
+    margin: 1em;
+    text-align: left;
+    font-family: Rockwell;
+}
+
+#Girls {
+    position: absolute;
+    bottom: 350px;
+    left: 15%;
+    z-index: 2;
+    height: 300px;
+}
+
+.girls {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.girls:hover {
+    margin-bottom: 0px;
+}
+
+.line {
+    position:absolute;
+    background-color: #cbf3f0;
+    width:800px;
+    height:5px;
+    bottom:650px;
+    left:15%;
+}
+
+.donate{
+    position:absolute;
+    left:7%;
+    margin-top:100px;
+    bottom:270px;
+}
+
+.donation {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#duration {
+    width: 200px;
+    height: 30px;
+}
+
+#donation-amount {
+    width: 200px;
+    height: 25px;
+}
+.donate-submit {
+    width: 110px;
+    height: 50px;
+    margin: 20px;
+}
+
+#currency {
+    width: 30px;
+    height: 30px;
+}
+
+.donation-labels{
+    font-size:25px;
+}
+
+.footer {
+    bottom: 0;
+    width: 1200px;
+    background-color: #eae9e8;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+}
+
+.footer-paragragh {
+    color: #2ec4b6;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin:auto
+}
+
+.footer-media {
+    width: 30px;
+    height: 30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:30px;
+    margin-right:30px;
+    position:center;
+}
+
+/* Header properites */
+h1{
+    font-family: 'Berlin Sans FB';
+    color: #FF9F1C;
+}
+h2 {
+    font-family: hand, cursive;
+    color: #1b9d94;
+}
+h1, h2{
+    text-align: center;
+}
+h3 {
+    font-family: 'Maiandra GD';
+    color: #FF9F1C;
+}
+/* ---------------------------------------------------------*/
+
+/* Animals Div properites*/
+.ourAnimals{
+    margin-top: 650px;
+    position:absolute;
+}
+
+.animals{
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 350px;
+    margin-left: 40px;
+}
+
+.icons{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.icons:hover {
+    width: 250px;
+    height: 250px;
+}
+/* ---------------------------------------------------------*/
+
+/* Animals popup forms properites*/
+
+.radioButton {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    margin: auto;
+}
+.ageBreed{
+    position: absolute;
+    left: 100px;
+    top: 170px;
+    margin: auto;
+}
+.color{
+    position: absolute;
+    left: 150px;
+    top: 240px;
+    margin: auto;
+}
+
+#dogForm{
+    position:fixed;
+    left:25%;
+    top:20%;
+}
+
+#catForm {
+    position: fixed;
+    left: 25%;
+    top: 20%;
+}
+
+#hamsterForm {
+    position: fixed;
+    left: 25%;
+    top: 20%;
+}
+
+#birdsForm {
+    position: fixed;
+    left: 25%;
+    top: 20%;
+}
+
+#fishsForm {
+    position: fixed;
+    left: 25%;
+    top: 20%;
+}
+
+#rabbitsForm {
+    position: fixed;
+    left: 25%;
+    top: 20%;
+}
+/* ---------------------------------------------------------*/
